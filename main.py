@@ -1,3 +1,12 @@
+#============================================================================
+# Name        : main.py
+# Author      : Abdurrahman Nurhakim
+# Version     : 1.0
+# Copyright   : Your copyright notice
+# Description : Trash destroyer automatic, which can monitored by firebase website based
+#============================================================================
+
+
 import loadcell_filtered as lc #library bikinan untuk ngitung loadcell
 import read_config as rc #library buat baca nilai config dari config.csv
 import ultrasonic as ul #library ultrasonic
@@ -20,13 +29,15 @@ def check_internet_connection():
     return result == 0
 
 # Konfigurasi Firebase (bisa dicek disetting firebase)
+
 firebaseConfig = {
-  "apiKey": "AIzaSyCE6p2s075BcH52X3NJaWESCXKDJ0zGFXA",
-  "authDomain": "shanti-raspi-project.firebaseapp.com",
-  "databaseURL": "https://shanti-raspi-project-default-rtdb.firebaseio.com",
-  "projectId": "shanti-raspi-project",
-  "storageBucket": "shanti-raspi-project.appspot.com",
-  "messagingSenderId": "278526881604",
+            "apiKey": "YOUR_API_KEY",
+            "authDomain": "YOUR_AUTH_DOMAIN",
+            "databaseURL": "YOUR_DATABASE_URL",
+            "projectId": "YOUR_PROJECT_ID",
+            "storageBucket": "YOUR_STORAGE_BUCKET",
+           "messagingSenderId": "YOUR_MESSAGING_SENDER_ID",
+            "appId": "YOUR_APP_ID",
 }
 
 #buat buffer untuk lcd 16x2
