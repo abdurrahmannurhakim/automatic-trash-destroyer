@@ -1,3 +1,12 @@
+#============================================================================
+# Name        : loadcell_filtered.py
+# Author      : Abdurrahman Nurhakim
+# Version     : 1.0
+# Copyright   : Your copyright notice
+# Description : Majority and minority selection for filtering non-linear data from half-bridge loadcell 4-channel
+#============================================================================
+ 
+
 from hx711 import HX711
 import RPi.GPIO as GPIO
 import time
